@@ -13,7 +13,8 @@
     "wordpress aws ses email transaction"
   ],
   "require": {
-    "php": ">=7"
+    "php": ">=7",
+    "aws/aws-sdk-php": "^3.87"
   },
   "autoload": {
     "files": ["wordpress-ses-drop-in.php"]
