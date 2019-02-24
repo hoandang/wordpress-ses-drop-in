@@ -1,0 +1,10 @@
+{
+  "name": "hoandang/wordpress-ses-drop-in",
+  "require": {
+    "php": ">=7",
+    "composer/installers": "~1.0"
+  },
+  "autoload": {
+    "files": ["wordpress-ses-drop-in.php"]
+  }
+}
