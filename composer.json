@@ -1,5 +1,17 @@
 {
   "name": "hoandang/wordpress-ses-drop-in",
+  "license": "MIT",
+  "description": "Wordpress SES Drop In",
+  "homepage": "https://github.com/hoandang/wordpress-ses-drop-in",
+  "authors": [
+    {
+      "name": "Hoan Dang",
+      "email": "danghuyhoan@gmail.com"
+    }
+  ], 
+  "keywords": [
+    "wordpress aws ses email transaction"
+  ],
   "require": {
     "php": ">=7",
     "composer/installers": "~1.0"
