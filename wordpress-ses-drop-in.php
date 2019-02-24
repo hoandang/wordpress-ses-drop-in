@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 
 use Aws\Ses\SesClient;
 use Aws\Exception\AwsException;
-include_once(ABSPATH . WPINC . '/class-phpmailer.php');
+include_once(ABSPATH . 'wp-includes/class-phpmailer.php');
 
 if (!function_exists('wp_mail')) :
 function wp_mail($to, $subject, $message, $headers = [], $attachments = [])
