@@ -13,11 +13,17 @@ use Aws\Exception\AwsException;
 include_once(ABSPATH . 'wp-includes/class-phpmailer.php');
 
 if (!function_exists('wp_mail')) :
-function wp_mail($to, $subject, $message, $headers = [], $attachments = [])
+function wp_mail($recipients, $subject, $message, $headers = [], $attachments = [])
 {
   $mail = new PHPMailer;
   $mail->setFrom(get_bloginfo('admin_email'));
-  $mail->addAddress($to);
+
+  $recipients = is_array($recipients) ? $recipients : explode(',', $recipients);
+  foreach($recipients as $recipient)
+  {
+    $mail->addAddress($recipient);
+  }
+
   $mail->isHTML(true);
   $mail->Subject = $subject;
   $mail->Body = $message;
