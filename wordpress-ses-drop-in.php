@@ -16,7 +16,7 @@ if (!function_exists('wp_mail')) :
 function wp_mail($recipients, $subject, $message, $headers = [], $attachments = [])
 {
   $mail = new PHPMailer;
-  $mail->setFrom(get_bloginfo('admin_email'));
+  $mail->setFrom(get_bloginfo('admin_email'), get_bloginfo('name'));
 
   $recipients = is_array($recipients) ? $recipients : explode(',', $recipients);
   foreach($recipients as $recipient)
