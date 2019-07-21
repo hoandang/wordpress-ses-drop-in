@@ -44,7 +44,7 @@ function wp_mail($recipients, $subject, $message, $headers = [], $attachments = 
   {
     $args = [
       'version' => 'latest',
-      'region' => getenv('AWS_REGION')
+      'region' => getenv('AWS_SES_REGION')
     ];
     if (getenv('AWS_ACCESS_KEY_ID') && getenv('AWS_SECRET_ACCESS_KEY'))
     {
