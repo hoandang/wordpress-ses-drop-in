@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: SES DropIn
-  Version: 1.0
+  Version: 1.3
 */
 
 if (!defined('ABSPATH')) {
